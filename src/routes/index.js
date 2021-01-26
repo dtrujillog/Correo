@@ -21,8 +21,8 @@ router.post('/send-email', async (req, res) => {
         port: 587,
         secure: false,
         auth: {
-            user: 'dtrujillo@emfama.com',
-            pass: 'Mega1989'
+            user: '',
+            pass: ''
         },
         tls: {
             rejectUnauthorized: false
@@ -30,7 +30,7 @@ router.post('/send-email', async (req, res) => {
     });
 
     let info = await transporter.sendMail({
-        from: '"Diego Trujillo" <dtrujillo@emfama.com>', // sender address,
+        from: '"Diego Trujillo" <>', // sender address,
         to: email,
         subject: 'Formulario de Contacto',
         // text: 'Hello World'
