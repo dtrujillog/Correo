@@ -13,6 +13,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 
 
-app.listen(80, ()=> {
-    console.log('Servidor en el puerto 80 ahuevo')
+app.listen(3000, ()=> {
+    console.log('Servidor en el puerto 3000 ahuevo')
 });
